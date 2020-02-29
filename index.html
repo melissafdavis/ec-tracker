@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elimination Communication</title>
+  <link rel = "stylesheet"href = "styles.css" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+  <section>
+    <h1>EC Observation Tracker</h1>
+    <p>Use this tracker for one week to identify patterns and cues to help you in your EC journey.</p>
+  
+    <h1 id="catches-H1">Catches</h1>
+    <label for="">Day</label>
+    <!-- <input type="text" id='type'> -->
+    <select id="day-catch" name="day">
+      <option value="Sunday">Sunday</option>
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+      <option value="Thursday">Thursday</option>
+      <option value="Friday">Friday</option>
+      <option value="Saturday">Saturday</option>
+    </select>
+    <label for="">Type of Catch</label>
+    <!-- <input type="text" id='type'> -->
+    <select id="type" name="type">
+      <option value="pee">pee</option>
+      <option value="poop">poop</option>
+      <option value="both">both</option>
+    </select>
+    <label for="">Time of Catch</label>
+    <input type="time" id='time-catch'>
+    <label for="">Cue</label>
+    <input type="text" id='cue'>
+    <button type='submit' id="submit"></button>
+
+      
+
+      <h1>Misses</h1>
+      <label for="">Day</label>
+      <select id="day-miss" name="day">
+        <option value="Sunday">Sunday</option>
+        <option value="Monday">Monday</option>
+        <option value="Tuesday">Tuesday</option>
+        <option value="Wednesday">Wednesday</option>
+        <option value="Thursday">Thursday</option>
+        <option value="Friday">Friday</option>
+        <option value="Saturday">Saturday</option>
+      </select>
+      <label for="">Type of Miss</label>
+      <select id="type-miss" name="type-miss">
+        <option value="pee">pee</option>
+        <option value="poop">poop</option>
+        <option value="both">both</option>
+      </select>
+      <label for="">Time of Miss</label>
+      <input type="time" id='time-miss'>
+      <label for="">Cue</label>
+      <input type="text" id='cue-miss'>
+      <button type='submit' id="submit-miss"></button>
+      
+      
+        <div id="chart" style="width:600px;height:250px;"></div>
+        <div id='data-tables'>
+
+        <div id="catch-table-div">
+        <h3>Catches</h3>
+        <table id="catch-table">
+          <tr>
+            <th>Day</th>
+            <th>Catch Type</th>
+            <th>Time </th>
+            <th>Cue</th>
+          </tr>
+          </table>
+        </div>
+
+        <div id="miss-table-div">
+          <h3>Misses</h3>
+          <table id="miss-table">
+            <tr>
+              <th>Day</th>
+              <th>Miss Type</th>
+              <th>Time </th>
+              <th>Cue</th>
+            </tr>
+            </table>
+          </div>
+
+          </div>
+        
+    
+  </section>
+  <script src="app.js"></script>
+
+</body>
+
+</html>

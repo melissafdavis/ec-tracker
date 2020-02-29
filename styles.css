@@ -1,0 +1,16 @@
+table, th, td {
+  border: 1px solid black;
+}
+
+body{
+  font-family: 'PT Sans', sans-serif ;
+}
+
+#data-tables{
+  display: flex;
+  flex-direction: row;
+}
+
+#miss-table-div{
+  margin-left: 10%;
+}
