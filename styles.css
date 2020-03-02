@@ -6,6 +6,11 @@ body{
   font-family: 'PT Sans', sans-serif ;
 }
 
+button{
+  padding: 5px;
+  
+}
+
 #data-tables{
   display: flex;
   flex-direction: row;

@@ -15,7 +15,6 @@
   
     <h1 id="catches-H1">Catches</h1>
     <label for="">Day</label>
-    <!-- <input type="text" id='type'> -->
     <select id="day-catch" name="day">
       <option value="Sunday">Sunday</option>
       <option value="Monday">Monday</option>
@@ -26,7 +25,6 @@
       <option value="Saturday">Saturday</option>
     </select>
     <label for="">Type of Catch</label>
-    <!-- <input type="text" id='type'> -->
     <select id="type" name="type">
       <option value="pee">pee</option>
       <option value="poop">poop</option>
@@ -34,9 +32,27 @@
     </select>
     <label for="">Time of Catch</label>
     <input type="time" id='time-catch'>
+
     <label for="">Cue</label>
-    <input type="text" id='cue'>
-    <button type='submit' id="submit"></button>
+    <!-- <input type="text" id='cue'> -->
+    <select id="cue" name="cue">
+      <option value="sign-language">sign language</option>
+      <option value="words">used words or sounds</option>
+      <option value="face">made a face</option>
+      <option value="fussing">fussing</option>
+      <option value="grunts">grunts</option>
+      <option value="fidgety">fidgety</option>
+      <option value="isolated">isolated self</option>
+      <option value="before sleep">before sleep</option>
+      <option value="after sleep">after sleep</option>
+      <option value="on own">went to potty on own</option>
+      <option value="schedule">scheduled potty-tunity</option>
+      <option value="intuition">intuition</option>
+      <option value="none">none</option>
+      
+    </select>
+
+    <button type='submit' id="submit">Submit</button>
 
       
 
@@ -60,8 +76,23 @@
       <label for="">Time of Miss</label>
       <input type="time" id='time-miss'>
       <label for="">Cue</label>
-      <input type="text" id='cue-miss'>
-      <button type='submit' id="submit-miss"></button>
+      <select id="cue-miss" name="cue-miss">
+        <option value="sign-language">sign language</option>
+        <option value="words">used words or sounds</option>
+        <option value="face">made a face</option>
+        <option value="fussing">fussing</option>
+        <option value="grunts">grunts</option>
+        <option value="fidgety">fidgety</option>
+        <option value="isolated">isolated self</option>
+        <option value="before sleep">before sleep</option>
+        <option value="after sleep">after sleep</option>
+        <option value="on own">went to potty on own</option>
+        <option value="schedule">scheduled potty-tunity</option>
+        <option value="intuition">intuition</option>
+        <option value="none">none</option>
+        
+      </select>
+      <button type='submit' id="submit-miss">Submit</button>
       
       
         <div id="chart" style="width:600px;height:250px;"></div>
