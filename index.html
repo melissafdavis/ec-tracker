@@ -7,13 +7,21 @@
   <link rel = "stylesheet"href = "styles.css" />
   <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
 </head>
 <body>
   <section>
-    <h1>EC Observation Tracker</h1>
+    <h1>EC Observation Tracker <i class="fas fa-poo"></i></h1> 
     <p>Use this tracker for one week to identify patterns and cues to help you in your EC journey.</p>
   
-    <h1 id="catches-H1">Catches</h1>
+    <div class="input-file-tab"> <i class="fas fa-baby"></i> <i class="fas fa-toilet"></i>
+      <div class="input-file-tab-inner">
+      <div class="input-file-tab-inner-inner">
+
+        <div class="catches">
+    <h2 id="catches-H1">Catches</h2>
+
+    <div class="input-rows">
     <label for="">Day</label>
     <select id="day-catch" name="day">
       <option value="Sunday">Sunday</option>
@@ -24,20 +32,27 @@
       <option value="Friday">Friday</option>
       <option value="Saturday">Saturday</option>
     </select>
-    <label for="">Type of Catch</label>
+  </div>
+
+  <div class="input-rows">
+    <label for="">Type</label>
     <select id="type" name="type">
       <option value="pee">pee</option>
       <option value="poop">poop</option>
       <option value="both">both</option>
     </select>
-    <label for="">Time of Catch</label>
-    <input type="time" id='time-catch'>
+  </div>
 
+  <div class="input-rows">
+    <label for="">Time</label>
+    <input type="time" id='time-catch'>
+  </div>
+
+  <div class="input-rows">
     <label for="">Cue</label>
-    <!-- <input type="text" id='cue'> -->
-    <select id="cue" name="cue">
-      <option value="sign-language">sign language</option>
-      <option value="words">used words or sounds</option>
+    <select id="cue-catch" name="cue">
+      <option value="sign-language">sign</option>
+      <option value="words">words/sounds</option>
       <option value="face">made a face</option>
       <option value="fussing">fussing</option>
       <option value="grunts">grunts</option>
@@ -51,30 +66,42 @@
       <option value="none">none</option>
       
     </select>
+  </div>
 
-    <button type='submit' id="submit">Submit</button>
-
+    <button type='submit' id="submit-catch">Submit</button>
+  </div>
       
+  <div class="misses">
+      <h2>Misses</h2>
 
-      <h1>Misses</h1>
-      <label for="">Day</label>
-      <select id="day-miss" name="day">
-        <option value="Sunday">Sunday</option>
-        <option value="Monday">Monday</option>
-        <option value="Tuesday">Tuesday</option>
-        <option value="Wednesday">Wednesday</option>
-        <option value="Thursday">Thursday</option>
-        <option value="Friday">Friday</option>
-        <option value="Saturday">Saturday</option>
-      </select>
-      <label for="">Type of Miss</label>
+      <div class="input-rows">
+        <label for="">Day</label>
+        <select id="day-miss" name="day">
+          <option value="Sunday">Sunday</option>
+          <option value="Monday">Monday</option>
+          <option value="Tuesday">Tuesday</option>
+          <option value="Wednesday">Wednesday</option>
+          <option value="Thursday">Thursday</option>
+          <option value="Friday">Friday</option>
+          <option value="Saturday">Saturday</option>
+        </select>
+      </div>
+  
+      <div class="input-rows">
+      <label for="">Type</label>
       <select id="type-miss" name="type-miss">
         <option value="pee">pee</option>
         <option value="poop">poop</option>
         <option value="both">both</option>
       </select>
-      <label for="">Time of Miss</label>
+    </div>
+
+    <div class="input-rows">
+      <label for="">Time</label>
       <input type="time" id='time-miss'>
+    </div>
+
+    <div class="input-rows">
       <label for="">Cue</label>
       <select id="cue-miss" name="cue-miss">
         <option value="sign-language">sign language</option>
@@ -92,18 +119,26 @@
         <option value="none">none</option>
         
       </select>
+    </div>
       <button type='submit' id="submit-miss">Submit</button>
-      
-      
-        <div id="chart" style="width:600px;height:250px;"></div>
-        <div id='data-tables'>
+    </div>
+    </div>
+    </div>
+    </div> <!--  input-file-tab -->
 
+    <div class="chart-file-tab">
+         <div id="chart" <!--style="width:100%;height:250px;"--></div>>
+     </div>
+
+
+        <div id='data-tables'>
+       
         <div id="catch-table-div">
         <h3>Catches</h3>
         <table id="catch-table">
           <tr>
             <th>Day</th>
-            <th>Catch Type</th>
+            <th>Type</th>
             <th>Time </th>
             <th>Cue</th>
           </tr>
@@ -115,13 +150,13 @@
           <table id="miss-table">
             <tr>
               <th>Day</th>
-              <th>Miss Type</th>
+              <th>Type</th>
               <th>Time </th>
               <th>Cue</th>
             </tr>
             </table>
           </div>
-
+        </div>
           </div>
         
     

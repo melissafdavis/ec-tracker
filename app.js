@@ -47,7 +47,7 @@ const time = document.getElementById('time-catch');
 const timeMiss = document.getElementById('time-miss');
 const cue = document.getElementById('cue');
 const cueMiss =  document.getElementById('cue-miss');
-const submitCatch = document.getElementById('submit');
+const submitCatch = document.getElementById('submit-catch');
 const submitMiss = document.getElementById('submit-miss');
 const catchTable = document.getElementById('catch-table');
 const missTable = document.getElementById('miss-table');
@@ -242,9 +242,9 @@ function updateChart(){
     x: ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
     y: catchData,
     marker: {
-        color: '#C8A2C8',
+        color: '#69ce764f',
         line: {
-            width: 2.5
+            width: 1
         }}};
 
   var trace2 = {
@@ -253,16 +253,16 @@ function updateChart(){
     x: ['Sunday','Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
     y: missData,
     marker: {
-        color: 'orange',
+        color: '#ce79884f',
         line: {
-            width: 2.5
+            width: 1
         }}};
   
   var data = [ trace1, trace2 ];
   
   var layout = { 
     title: 'Catches vs Misses',
-    font: {size: 18}
+    font: {size: 14}
   };
   
   var config = {responsive: true}

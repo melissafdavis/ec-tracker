@@ -4,18 +4,136 @@ table, th, td {
 
 body{
   font-family: 'PT Sans', sans-serif ;
+ 
 }
 
-button{
-  padding: 5px;
+.input-file-tab{
+  background-color: #6799f554;
+  /* text-align: center; */
+  border-radius: 5%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  padding: 5px 5px 5px 5px;
+}
+
+.input-file-tab-inner{
+  border-radius: 10px;
+  border: solid 1px lightgray;
+  background-color: white;
+  margin: 5px;
+}
+
+.input-file-tab-inner-inner{
+  width: 95%;
+  margin: 0 auto;
+  text-align: left;
   
 }
 
-#data-tables{
+.catches{
+  background-color:#69ce764f;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-#miss-table-div{
-  margin-left: 10%;
+.misses{
+  background-color: #ce79884f;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  
 }
+
+.input-rows{
+  width:100%;
+  display: flex;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.input-rows select{
+  background-color: white;
+  width: 100%;
+  margin-left: 10px;
+}
+
+.input-rows input{
+  background-color: white;
+  width: 100%;
+  margin-left: 10px;
+}
+
+/* #day-catch{
+  padding: 10px;
+} */
+
+#time-catch{
+  border-radius: 5%;
+  border: solid 1px gray;
+}
+
+/* #cue-catch{
+  padding: 10px;
+} */
+
+#submit-catch{
+  background-color: white;
+  padding: 10px;
+  border: 1px green solid;
+}
+
+#submit-miss{
+  background-color: white;
+  padding: 10px;
+  border: 1px red solid;
+}
+
+h1{
+  text-align: center;
+  
+}
+
+.chart-file-tab{
+  background-color: #6799f554;
+  /* text-align: center; */
+  border-radius: 5%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  padding: 5px 5px 5px 5px;
+}
+
+#chart{
+  width: 100%;
+  height: auto;
+ 
+}
+
+/* button{
+  padding: 5px;
+  
+} */
+
+#data-tables{
+  display: flex;
+  flex-direction: column; 
+}
+
+#catch-table-div{
+  width: 100%;
+  margin: 0 auto;
+}
+
+ #miss-table-div{
+  width: 300px;
+} 
+
+tr, td{
+  padding: 6px;
+  
+}
+
