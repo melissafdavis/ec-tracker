@@ -1,15 +1,4 @@
-table, th, td {
-  border: 1px solid black;
- 
-}
 
-table {
-  margin: 0 auto;
-}
-
-#miss-table{
-  margin: 0 auto;
-}
 
 body{
   font-family: 'PT Sans', sans-serif ;
@@ -131,6 +120,7 @@ h1, h2, h3, p{
   
 } */
 
+
 #data-tables{
   display: flex;
   flex-direction: column; 
@@ -159,6 +149,19 @@ h1, h2, h3, p{
 }
 #miss-table th{
   background-color: #ce79884f;
+}
+
+table, th, td {
+  border: 1px solid gray;
+ 
+}
+
+table {
+  /* margin: 0 auto; */
+}
+
+#miss-table{
+  /* margin: 0 auto; */
 }
 
 tr, td{

@@ -45,7 +45,7 @@ const type = document.getElementById('type');
 const typeMiss = document.getElementById('type-miss');
 const time = document.getElementById('time-catch');
 const timeMiss = document.getElementById('time-miss');
-const cue = document.getElementById('cue');
+const cue = document.getElementById('cue-catch');
 const cueMiss =  document.getElementById('cue-miss');
 const submitCatch = document.getElementById('submit-catch');
 const submitMiss = document.getElementById('submit-miss');
@@ -59,8 +59,6 @@ submitMiss.addEventListener('click', updateChart)
 
 createTable();
 updateChart();
-
-
 
 function updateCatch() {
   const catchDay = day.value;
