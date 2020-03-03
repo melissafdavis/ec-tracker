@@ -1,4 +1,5 @@
 
+/*mobile first */
 
 body{
   font-family: 'PT Sans', sans-serif ;
@@ -30,16 +31,17 @@ body{
 
 .catches{
   background-color:#69ce764f;
-  padding: 20px;
+  padding: 25px;
   margin: 10px;
   border-radius: 10%;
   display: flex;
   flex-direction: column;
+  text-align: right;
 }
 
 .misses{
   background-color: #ce79884f;
-  padding: 20px;
+  padding: 25px;
   margin: 10px;
   border-radius: 10%;
   display: flex;
@@ -71,7 +73,11 @@ body{
 } */
 
 #time-catch{
-  border-radius: 5%;
+  border-radius: 5px;
+  border: solid 1px gray;
+}
+#time-miss{
+  border-radius: 5px;
   border: solid 1px gray;
 }
 
@@ -80,15 +86,19 @@ body{
 } */
 
 #submit-catch{
-  background-color: white;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #00800047;
   padding: 10px;
-  border: 1px green solid;
+  /* border: 1px green solid; */
+  box-shadow: 2px 2px green;
 }
 
 #submit-miss{
-  background-color: white;
+  background-color:#ff010061;
   padding: 10px;
-  border: 1px red solid;
+  /* border: 1px red solid; */
+  box-shadow: 2px 2px  #ff010094;
 }
 
 h1{
@@ -157,15 +167,45 @@ table, th, td {
 }
 
 table {
-  /* margin: 0 auto; */
+  margin: 0 auto; 
 }
 
 #miss-table{
-  /* margin: 0 auto; */
+  margin: 0 auto; 
 }
 
 tr, td{
   padding: 6px;
   
 }
+
+/*tablets*/
+@media screen and (min-width: 600px){
+
+  .input-file-tab-inner-inner{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    width: 90\]
+    ;[%;
+  }
+
+  .catches{
+    width: 50%;
+  }
+
+  .misses {
+    width: 50%;
+  }
+
+  .data-tables-inner{
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+  }
+
+
+}
+
+
 
