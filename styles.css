@@ -180,14 +180,14 @@ tr, td{
 }
 
 /*tablets*/
-@media screen and (min-width: 600px){
+@media screen and (min-width: 768px){
 
   .input-file-tab-inner-inner{
     display: flex;
     flex-direction: row;
     padding: 40px;
-    width: 90\]
-    ;[%;
+    width: 90%;
+  
   }
 
   .catches{
@@ -205,6 +205,73 @@ tr, td{
   }
 
 
+}
+
+@media screen and (min-width: 1224px){
+
+  .input-file-tab-inner-inner{
+    
+  }
+
+  h1{
+    font-size: 3em;
+  }
+
+  p{
+    font-size: 2em;
+  }
+
+  .catches{
+    width: 30%;
+    margin-left: 10%;
+    font-size: 1.5em;
+    padding: 1.5em;
+  }
+  .misses{
+    width: 30%;
+    font-size: 1.5em;
+    margin-left: 10%;
+    padding: 1.5em;
+  }
+
+  .input-rows{
+   
+  }
+  .input-rows label{
+    font-size: 1.5em;
+  }
+
+  .input-rows select{
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  
+
+  label{
+    font-size: 20px;
+  }
+  
+  #submit-catch{
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-size: 1.5em;
+  }
+
+  #submit-miss{
+    margin-top: 1em;
+    margin-bottom: .5em;
+    font-size: 1.5em;
+  }
+
+  #chart{
+    font-size: 2em;
+
+  }
+
+  #data-tables{
+    font-size: 2em;
+  }
 }
 
 
