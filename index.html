@@ -2,136 +2,118 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Elimination Communication</title>
-  <link rel = "stylesheet"href = "styles.css" />
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+  <link rel = "stylesheet"href = "styles.css" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elimination Communication</title>
+
+  
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet"> -->
+  
+
+  
+
+  
+          
+
+
 </head>
 <body>
-  <section>
-    <h1><i class="fas fa-baby"></i> EC Observation Tracker <i class="fas fa-poo"></i></h1> 
-    <p>Use this tracker during observation periods to help identify your baby's patterns and cues.</p>
+
+
+ 
+    <h4 style="color:#ff8a65"> EC Observation Tracker</h4> 
+ <label for="date-buttons">Pick Your Start Date</label>
+ <section class="buttons">
+  <input type="text" class="datepicker" id="date1">
+  <button type='submit' id="date-submit" class="submit btn waves-effect waves-teal">Submit Start Date</button>
+
+  <button id="day1">Day 1  </button>
   
-    <div class="input-file-tab"> 
-      <div class="input-file-tab-inner">
-      <div class="input-file-tab-inner-inner">
-
-        <div class="catches">
-    <h2 id="catches-H1">Catches</h2>
-
-    <div class="input-rows">
-    <label for="">Day </label>
-    <select id="day-catch" name="day">
-      <option value="Sunday">Sunday</option>
-      <option value="Monday">Monday</option>
-      <option value="Tuesday">Tuesday</option>
-      <option value="Wednesday">Wednesday</option>
-      <option value="Thursday">Thursday</option>
-      <option value="Friday">Friday</option>
-      <option value="Saturday">Saturday</option>
-    </select>
-  </div>
-
-  <div class="input-rows">
-    <label for="">Type</label>
-    <select id="type" name="type">
-      <option value="pee">pee</option>
-      <option value="poop">poop</option>
-      <option value="both">both</option>
-    </select>
-  </div>
-
-  <div class="input-rows">
-    <label for="">Time</label>
-    <input type="time" id='time-catch'>
-  </div>
-
-  <div class="input-rows">
-    <label for="">Cue  </label>
-    <select id="cue-catch" name="cue">
-      <option value="sign-language">sign language</option>
-      <option value="words">words/sounds</option>
-      <option value="face">made a face</option>
-      <option value="fussing">fussing</option>
-      <option value="grunts">grunts</option>
-      <option value="fidgety">fidgety</option>
-      <option value="isolated">isolated self</option>
-      <option value="before sleep">before sleep</option>
-      <option value="after sleep">after sleep</option>
-      <option value="on own">went to potty on own</option>
-      <option value="schedule">scheduled potty-tunity</option>
-      <option value="intuition">intuition</option>
-      <option value="none">none</option>
-      
-    </select>
-  </div>
-
-    <button type='submit' id="submit-catch">Submit</button>
-  </div>
-      
-  <div class="misses">
-      <h2>Misses</h2>
-
-      <div class="input-rows">
-        <label for="">Day</label>
-        <select id="day-miss" name="day">
-          <option value="Sunday">Sunday</option>
-          <option value="Monday">Monday</option>
-          <option value="Tuesday">Tuesday</option>
-          <option value="Wednesday">Wednesday</option>
-          <option value="Thursday">Thursday</option>
-          <option value="Friday">Friday</option>
-          <option value="Saturday">Saturday</option>
-        </select>
-      </div>
+  <button id="day2">Day 2  </button>
+  <button id="day3">Day 3 </button>
+  <button id="day4">Day 4  </button>
+  <button id="day5">Day 5  </button>
+  <button id="day6">Day 6  </button>
+  <button id="day7">Day 7  </button>
+</section>
+  <!-- <label for="datepicker">Date</label> -->
+  <!-- <input type="text" class="datepicker"> -->
+  <label for="timepicker">Time</label>
+  <input type="text" class="timepicker">
   
-      <div class="input-rows">
-      <label for="">Type</label>
-      <select id="type-miss" name="type-miss">
-        <option value="pee">pee</option>
-        <option value="poop">poop</option>
-        <option value="both">both</option>
-      </select>
+  <label for="event-buttons">Events</label>
+  <!-- Catch Buttons -->
+   <section class="buttons">
+     <div class="type-buttons">
+      
+      <button type="submit" class="log-event " id="pee" name="pee">
+        <div class="icon teal lighten-2 "><i class="fas fa-tint"></i> </div>       
+        <div class="icon-label">Pee Catch</div>
+      </button>
+
+      <button type="submit" class="log-event" id="poop" name="poop">
+        <div class="icon teal lighten-2"><i class="fas fa-poop"></i> </div>       
+        <div class="icon-label">Poop Catch</div>
+      </button>
+
+      <button type="submit" class="log-event" id="both" name="both">
+        <div class="icon teal lighten-2"><i class="fas fa-poop"></i> </div>       
+        <div class="icon-label">Both Catch</div>
+      </button>
+
+      
+    </div>
+     
+    <!-- Miss Buttons -->
+      <div class="type-buttons">
+
+        <button type="submit" class="log-event" id="pee-miss" name="pee-miss">
+          <div class="icon deep-orange lighten-2"><i class="fas fa-tint"></i> </div>       
+          <div class="icon-label">Pee Miss</div>
+        </button>
+      
+      <button type="submit" class="log-event" id="poop-miss" name="poop-miss">
+        <div class="icon deep-orange lighten-2"><i class="fas fa-poop"></i> </div>       
+        <div class="icon-label">Poop Miss</div>
+      </button>
+
+      <button type="submit" class="log-event" id="both-miss" name="both-miss">
+        <div class="icon deep-orange lighten-2"><i class="fas fa-poop"></i> </div>       
+        <div class="icon-label">Both Miss</div>
+      </button>
+
     </div>
 
-    <div class="input-rows">
-      <label for="">Time</label>
-      <input type="time" id='time-miss'>
-    </div>
+   
 
-    <div class="input-rows">
-      <label for="">Cue</label>
-      <select id="cue-miss" name="cue-miss">
-        <option value="sign-language">sign language</option>
-        <option value="words">used words or sounds</option>
-        <option value="face">made a face</option>
-        <option value="fussing">fussing</option>
-        <option value="grunts">grunts</option>
-        <option value="fidgety">fidgety</option>
-        <option value="isolated">isolated self</option>
-        <option value="before sleep">before sleep</option>
-        <option value="after sleep">after sleep</option>
-        <option value="on own">went to potty on own</option>
-        <option value="schedule">scheduled potty-tunity</option>
-        <option value="intuition">intuition</option>
-        <option value="none">none</option>
-        
-      </select>
+    <!-- Dry Buttons -->
+    <div class="type-buttons">
+      <button type="submit" class="log-event" id="dry" name="dry">
+        <div class="icon yellow accent-1"><i class="fas fa-poop"></i> </div>       
+        <div class="icon-label">Dry Diaper</div>
+      </button>
+      <button type="submit" class="log-event" id="empty" name="empty">
+        <div class="icon yellow accent-1"><i class="fas fa-poop"></i> </div>       
+        <div class="icon-label">Empty Potty</div>
+      </button>
     </div>
-      <button type='submit' id="submit-miss">Submit</button>
-    </div>
-    </div>
-    </div>
-    </div> <!--  input-file-tab -->
+      </section>
+    <label>Notes</label>
+    <input type="text" class="notes" name="notes" value="">
 
-    <div class="chart-file-tab">
-         <div id="chart" <!--style="width:100%;height:250px;"--></div>
-     </div>
+    <button type='submit' class="submit btn waves-effect waves-teal" id="main-submit">Submit</button>
+  
+   
+  
 
-
-        <div id='data-tables'>
+        <!-- <div id='data-tables'>
           <div class="data-tables-inner">
        
         <div id="catch-table-div">
@@ -158,14 +140,44 @@
             </table>
           </div>
 
-        </div>
-      </div>
+          
 
-         
-        
-    
-  </section>
-  <script src="app.js"></script>
+        </div>
+      </div> -->
+
+      <div class="timeline">
+        <h3>Timeline</h3>
+        <div id="day1-tl" style="color:#ff8a65"> Day 1</div>
+        <div id="day1-tracker">Catches: Misses: </div>
+        <div id="day2-tl" style="color:#ff8a65">Day 2</div>
+        <div id="day2-tracker">Catches: Misses: </div>
+        <div id="day3-tl" style="color:#ff8a65">Day 3</div>
+        <div id="day3-tracker">Catches: Misses: </div>
+        <div id="day4-tl" style="color:#ff8a65">Day 4</div>
+        <div id="day4-tracker">Catches: Misses: </div>
+        <div id="day5-tl" style="color:#ff8a65">Day 5</div>
+        <div id="day5-tracker">Catches: Misses: </div>
+        <div id="day6-tl" style="color:#ff8a65">Day 6</div>
+        <div id="day5-tracker">Catches: Misses: </div>
+        <div id="day7-tl" style="color:#ff8a65">Day 7</div>
+        <div id="day7-tracker">Catches: Misses: </div>
+      <div class="timeline-background"></div>
+    </div> <!-- timeline -->
+
+
+
+  <div id="chart" style="width:100%;height:250px;"></div>
+
+ 
+  
+
+  <!-- <script src="app.js"></script> -->
+  <script src="app3.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ 
+ 
+
 
 </body>
 
