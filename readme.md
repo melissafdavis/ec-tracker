@@ -16,7 +16,8 @@ The app is not styled yet. First I'm working on functionality but will come back
 
 
 1. Recording and posting a daily tally of catches and misses in the timeline
-2. Adding graphs
+2. Adding a delete button for events
+3. Adding graphs/charts
 
 #### Desired feedback:
 1. How can I accomplish what I've already done more succinctly and efficiently?
