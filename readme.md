@@ -4,8 +4,10 @@ This is a web based tracking app for parents doing elimination communication (in
 #### Purpose:
 Periodically EC parents take time to observe their child's patterns for a number of days in order to improve their practice. The goal of this app is for parents to be able to use this tracker for a 7 day observation period to record all potty misses and catches.
 
-#### Note about stying: 
+#### Notes 
 The app is not styled yet.  I'm focused solely on functionality right now but will return to styling concerns later.
+
+Also, all current functionality is built into app3.js. App.js and app2.js are just receptacles for code I tried already that didn't work or isn't needed at this point.
 
 #### Functionality that I've more or less finished: 
 Recording events accurately and in the correct places on the timeline
